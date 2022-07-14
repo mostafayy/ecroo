@@ -19,9 +19,10 @@ const SlidCard = () => {
     <>
        <Slider {...settings}>
         {Sdata.map((value, index) => {
+          // console.log(value.id)
           return (
-            <>
-              <div className='box d_flex top' key={index}>
+            <div key={index}>
+              <div className='box d_flex top'>
                 <div className='left'>
                   <h1>{value.title}</h1>
                   <p>{value.desc}</p>
@@ -31,7 +32,7 @@ const SlidCard = () => {
                   <img src={value.cover} alt='' />
                 </div>
               </div>
-            </>
+            </div>
           )
         })}
       </Slider>

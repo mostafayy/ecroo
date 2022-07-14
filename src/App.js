@@ -53,8 +53,8 @@ function App() {
       <Router>
         <Header  CartItem={CartItem} />
         <Routes>
-        <Route exact path="/" element={<Pages productItems={productItems} addToCart={addToCart}shopItems={shopItems}/>}/>
-        <Route exact path="/cart" element={<Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty}/>}/>
+        <Route  path="/" element={<Pages productItems={productItems} addToCart={addToCart}shopItems={shopItems}/>}/>
+        <Route  path="/cart" element={<Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty}/>}/>
       
           
           
